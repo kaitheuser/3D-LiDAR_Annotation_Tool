@@ -33,4 +33,13 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
         
         `rosrun pcl_ros bag_to_pcd <input_file.bag> <topic> <output_directory>`
 
+# Installation
+0. Git clone the repository
+    * `git clone https://github.com/kaitheuser/3D-LiDAR_Annotation_Tool.git`
+1. Change directory to `3D-LiDAR_Annotation_Tool` folder
+    * `cd 3D-LiDAR_Annotation_Tool`
+2. Install dependencies
+    * `pip3 install -r requirements.txt`
+
+
         
