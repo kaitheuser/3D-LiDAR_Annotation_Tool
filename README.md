@@ -13,8 +13,11 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
     ![](./gif/bag2pcd.gif)
 
     * Run the command below in a Linux terminal:
+        
         `roscore`
+
     * Run the following command in a **NEW** Linux terminal:
+        
         `rosrun pcl_ros bag_to_pcd <input_file.bag> <topic> <output_directory>`
 
         
