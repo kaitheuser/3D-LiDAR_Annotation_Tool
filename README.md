@@ -2,6 +2,16 @@
 ## git clone from songanz/3D-LiDAR-annotator
 UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
 
+# Citation
+``` 
+   @article{wang2019latte,
+      title={LATTE: Accelerating LiDAR Point Cloud Annotation via Sensor Fusion, One-Click Annotation, and Tracking},
+      author={Wang, Bernie and Wu, Virginia and Wu, Bichen and Keutzer, Kurt},
+      journal={arXiv preprint arXiv:1904.09085},
+      year={2019}
+   }
+   ```
+
 # OS and App Requirements
 0. Ubuntu 16.04 LTS
 1. Python 3.7.13
