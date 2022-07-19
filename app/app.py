@@ -25,7 +25,6 @@ def trackBoundingBox():
 	pointcloud = PointCloud.parse_json(json_request["pointcloud"], json_request["intensities"])
 	filtered_indices = tracker.filter_pointcloud(pointcloud)
 	next_bounding_boxes = tracker.predict_bounding_boxes(pointcloud)
-	# print(filtered_indices)
 	print(next_bounding_boxes)
 	return str([filtered_indices, next_bounding_boxes])
 

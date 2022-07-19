@@ -1,0 +1,12 @@
+numpy==1.21.6
+pypcd @ git+https://github.com/klintan/pypcd.git@144478abe12b4876567cc04cd8fc310ffa62864a
+tqdm==4.64.0
+Flask==2.0.3
+json5==0.9.8
+jsonschema==4.7.2
+fastjsonschema==2.15.3
+matplotlib==3.0.3
+matplotlib-inline==0.1.3
+scikit-image==0.15.0
+scikit-learn==1.0.2
+scipy==1.2.1

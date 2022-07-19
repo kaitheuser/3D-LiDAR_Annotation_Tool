@@ -16,8 +16,6 @@ class PointCloud():
 									)
 						   for i in range(len(json_pointcloud))])
 		print(len(intensities) - np.count_nonzero(intensities))
-		# points = np.array([(json_pointcloud[i]["x"],
-		# 		   json_pointcloud[i]["y"]) for i in range(len(json_pointcloud))])
 		return PointCloud(points, intensities)
 
 	def filter_points(self):
