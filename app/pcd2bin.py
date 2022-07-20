@@ -34,7 +34,7 @@ def convert_pcd2bin():
         "--file_name",
         help="File name.",
         type=str,
-        default="file_name"
+        default=""
     )
     args = parser.parse_args()
 
