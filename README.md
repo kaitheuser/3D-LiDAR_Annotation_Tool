@@ -73,6 +73,7 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
     * `python3 app.py`
 3. Decide whether to convert the pcd files to bin files.
     * `Y` -> Choose to convert
+    ![](./gif/pcd2bin.gif)
     0.  Browse For PCD File Directory
     1.  Choose a Directory to save the .bin files
     2.  Click the **Convert PCD to BIN** button to convert
