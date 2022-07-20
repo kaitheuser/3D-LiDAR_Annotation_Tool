@@ -6,6 +6,7 @@ jsonschema==4.7.2
 fastjsonschema==2.15.3
 matplotlib
 matplotlib-inline
+pypcd
 scikit-image
 scikit-learn
 scipy
