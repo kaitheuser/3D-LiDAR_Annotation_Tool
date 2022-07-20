@@ -71,6 +71,11 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
 1. To solve Error #1 and Error #2, execute the following commands in the terminal:
     * `pip3 uninstall pypcd`
     * `pip3 install --upgrade git+https://github.com/klintan/pypcd.git`
+        - If failed to execute, go to https://github.com/klintan/pypcd.git 
+        - In the repo, find `pypcd.py` in the `pypcd/pypcd` directory
+        - Copy the entire code
+        - In your local machine, find `pypcd.py` in the `/Users/username/Library/Python/3.x/lib/python/site-packages/pypcd/pypcd.py`
+        - Delete the entire code and paste it.
 2. To solve Error #3, edit the pypcd.py script from the pypcd python package, it can be in one of the following directories:
     - `/home/user/anaconda3/envs/py37/lib/python3.7/site-packages/pypcd`
     - `/usr/lib/python3.5/site-packages/pypcd`
