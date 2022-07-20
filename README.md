@@ -105,6 +105,11 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
 
 10. Click on the **Save icon** to save the bounding boxes information as a json file.
 
+# 2D/3D Controls without Holding "Ctrl"
+0. **Left-click** to change the view of map.
+1. **Scroll-click** to zoom in and out the map.
+2. **Right-click** to move the map.
+
 # Bugs and Fixes
 ## pypcd Package Issues
 ### Errors
