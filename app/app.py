@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from bounding_box import BoundingBox
 from pointcloud import PointCloud
 from tracker import Tracker
-from pcd2bin import pcd2bin_GUI
+from pcd2bin import pcd2bin_GUI, bin_directory_GUI
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -48,5 +48,7 @@ if __name__ == "__main__":
 		print('Please enter an appropriate answer.')
 	if user_input in ['Y', 'y']:
 		pcd2bin_GUI()
+	else:
+		bin_directory_GUI()
 	tracker = Tracker()
 	app.run()

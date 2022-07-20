@@ -117,6 +117,11 @@ def save2dir():
     save2path = filedialog.askdirectory()
     save2path = save2path + "/"
 
+# Confirm button
+def confirm_button():
+    global top_bar
+    top_bar.destroy()
+
 # PCD2BIN Converter GUI
 def pcd2bin_GUI():
      # Top Bar Title
@@ -137,6 +142,27 @@ def pcd2bin_GUI():
     converter_Canvas.create_window(330, 180, window=save_to_Button)
     
     convert_Button = tk.Button(text="      Convert PCD to BIN      ", command = convert_pcd2bin , bg = 'AntiqueWhite1', fg ='gray1', font = ('aerial', 12, 'bold') )
+    converter_Canvas.create_window(330, 230, window=convert_Button)
+    
+    top_bar.mainloop()
+
+# Browse Bin Directory GUI
+def bin_directory_GUI():
+     # Top Bar Title
+    global top_bar
+    top_bar = tk.Tk()
+    top_bar.title("UCSD Autonomous Vehicle Laboratory")                                                            # Title Name
+    # Body
+    converter_Canvas = tk.Canvas(top_bar, bg='RoyalBlue1', width = 650, height = 260, relief ='raised')            # Background Color and Body Size
+    converter_Canvas.pack()
+    title_Text = tk.Label(top_bar, text='BIN Files Directory Selection', bg = 'RoyalBlue1')                      # Body Title Text
+    title_Text.config(font = ('aerial', 24, 'bold'))                                                               # Set a font type and font size.
+    converter_Canvas.create_window(330, 60, window=title_Text)                                                     # Position of the title.
+
+    save_to_Button = tk.Button(text="      Browse the Bin File Directory      ", command = save2dir , bg = 'AntiqueWhite1', fg ='gray1', font = ('aerial', 12, 'bold') )
+    converter_Canvas.create_window(330, 180, window=save_to_Button)
+    
+    convert_Button = tk.Button(text="      Confirm      ", command = confirm_button , bg = 'AntiqueWhite1', fg ='gray1', font = ('aerial', 12, 'bold') )
     converter_Canvas.create_window(330, 230, window=convert_Button)
     
     top_bar.mainloop()
