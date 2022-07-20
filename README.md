@@ -1,8 +1,7 @@
 # 3D LiDAR Annotation Tool with pcd2bin Conversion Tool
 UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
+
 ![](./img/UCSD_AVL_3D-LiDAR_Annotation_Tool.png)
-
-
 
 # OS and App Requirements
 0. Ubuntu 16.04 LTS
