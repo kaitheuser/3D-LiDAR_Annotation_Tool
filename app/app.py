@@ -41,6 +41,12 @@ def predictLabel():
 	return str('Car')
 
 if __name__ == "__main__":
-	pcd2bin_GUI()
+	while True:
+		user_input =  input ('Do you want to convert your .pcd files to .bin files? [Y/N] \n')
+		if user_input in ['Y', 'y', 'N', 'n'] :
+			break
+		print('Please enter an appropriate answer.')
+	if user_input in ['Y', 'y']:
+		pcd2bin_GUI()
 	tracker = Tracker()
 	app.run()
