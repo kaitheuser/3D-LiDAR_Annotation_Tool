@@ -16,6 +16,7 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
 0. Ubuntu 16.04 LTS
 1. Python 3.7.13
 2. ROS Kinetic
+3. Google Chrome
 
 # Pre-requisites
 0. Skip the step (Pre-requisite Step #1) below if the LiDAR data are stored in a binary float matrix format (.bin extension)
@@ -40,6 +41,26 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
     * `cd 3D-LiDAR_Annotation_Tool`
 2. Install dependencies
     * `pip3 install -r requirements.txt`
+
+# How to Run the 3D LiDAR Annotation Tool with pcd2bin Conversion Tool Application
+0. Change directory to `3D-LiDAR_Annotation_Tool` folder
+    * `cd 3D-LiDAR_Annotation_Tool`
+1. Navigate to the `app` folder in the `3D-LiDAR_Annotation_Tool` folder
+    * `cd app`
+2. Run the `app.py` to launch the application.
+    * `python3 app.py`
+3. Decide whether to convert the pcd files to bin files.
+    * `Y` -> Choose to convert
+    0.  Browse For PCD File Directory
+    1.  Choose a Directory to save the .bin files
+    2.  Click the **Convert PCD to BIN** button to convert
+    * `N` -> Already converted
+4.  Open **http://127.0.0.1:5000** on the Chrome Browser
+
+
+
+
+
 
 
         
