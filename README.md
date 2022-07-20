@@ -33,6 +33,36 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
     * `cd 3D-LiDAR_Annotation_Tool`
 2. Install dependencies
     * `pip3 install -r requirements.txt`
+3. go to https://github.com/klintan/pypcd.git 
+4. In the repo, find `pypcd.py` in the `pypcd/pypcd` directory
+5. Copy the entire code
+6. In your local machine, find `pypcd.py` in the `/Users/username/Library/Python/3.x/lib/python/site-packages/pypcd/pypcd.py`
+7. Delete the entire code and paste it.
+8. Edit the pypcd.py script from the pypcd python package, it can be in one of the following directories:
+    - `/Users/username/Library/Python/3.x/lib/python/site-packages/pypcd/pypcd.py`
+
+    Original Code:
+
+    ```python
+    def parse_header(lines):
+        metadata = {}
+        for ln in lines:
+            if ln.startswith('#') or len(ln) < 2:
+                continue
+            match = re.match('(\w+)\s+([\w\s\.]+)', ln)
+    ```
+
+    Modified Code:
+
+    ```python
+    def parse_header(lines):
+        metadata = {}
+        for ln in lines:
+            if ln.startswith('#') or len(ln) < 2:
+                continue
+            ln = ln.replace('_','s',1)
+            ln = ln.replace('_','m',1)
+            match = re.match('(\w+)\s+([\w\s\.]+)', ln)
 
 # How to Run the 3D LiDAR Annotation Tool with pcd2bin Conversion Tool Application
 0. Change directory to `3D-LiDAR_Annotation_Tool` folder
@@ -76,10 +106,12 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
         - Copy the entire code
         - In your local machine, find `pypcd.py` in the `/Users/username/Library/Python/3.x/lib/python/site-packages/pypcd/pypcd.py`
         - Delete the entire code and paste it.
+        - Then, follow **Solutions #2**.
 2. To solve Error #3, edit the pypcd.py script from the pypcd python package, it can be in one of the following directories:
     - `/home/user/anaconda3/envs/py37/lib/python3.7/site-packages/pypcd`
     - `/usr/lib/python3.5/site-packages/pypcd`
-    
+    - `/Users/username/Library/Python/3.x/lib/python/site-packages/pypcd/pypcd.py`
+
     Original Code:
 
     ```python
