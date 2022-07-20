@@ -1,17 +1,8 @@
 # 3D LiDAR Annotation Tool with pcd2bin Conversion Tool
-## git clone from songanz/3D-LiDAR-annotator
 UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
 ![](./img/UCSD_AVL_3D-LiDAR_Annotation_Tool.png)
 
-# Citation
-``` 
-   @article{wang2019latte,
-      title={LATTE: Accelerating LiDAR Point Cloud Annotation via Sensor Fusion, One-Click Annotation, and Tracking},
-      author={Wang, Bernie and Wu, Virginia and Wu, Bichen and Keutzer, Kurt},
-      journal={arXiv preprint arXiv:1904.09085},
-      year={2019}
-   }
-   ```
+
 
 # OS and App Requirements
 0. Ubuntu 16.04 LTS
@@ -112,6 +103,17 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
     * `pip3 uninstall Jinja2`
     * `pip3 install Flask==2.0.3`
     * `pip3 install Jinja2==3.1.1`
+
+# Citation
+``` 
+   @article{wang2019latte,
+      title={LATTE: Accelerating LiDAR Point Cloud Annotation via Sensor Fusion, One-Click Annotation, and Tracking},
+      author={Wang, Bernie and Wu, Virginia and Wu, Bichen and Keutzer, Kurt},
+      journal={arXiv preprint arXiv:1904.09085},
+      year={2019}
+   }
+   ```
+`git clone from songanz/3D-LiDAR-annotator`
 
 
 
