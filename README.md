@@ -110,6 +110,11 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
 1. **Scroll-click** to zoom in and out the map.
 2. **Right-click** to move the map.
 
+# Future Development
+0. Support .pcd, .pcl, and .bin files.
+1. Add **Next Frame** to move to next frame conveniently.
+2. Automatic tracking and labeling after the first annotation. 
+
 # Bugs and Fixes
 ## pypcd Package Issues
 ### Errors
