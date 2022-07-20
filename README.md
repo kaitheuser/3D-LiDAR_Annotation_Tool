@@ -59,7 +59,13 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
 4.  Open **http://127.0.0.1:5000** on the Chrome Browser
 
 # How to Annotate 3D-LiDAR Point Clouds or Objects
-0. 
+0. Click on **Choose Files** Button to select a .bin file to annotate.
+1. Click on **Click to start recording** Button to start annotating.
+2. Hold **Ctrl** + **Mouse Left Click** and then drag across the screen to draw a 2D-bounding box.
+3. Hold **Ctrl** + **Mouse Left Click** on the point that is not a vertex to rotate the bounding box.
+4. Click on the **3D icon** that is above the **Pen**/**Edit** button to view the point clouds in 3D.
+5. Hold **Ctrl** + **Mouse Left Click** on the point that is not on the edge of the box to adjust the height of the bounding box.
+6. Click on the **Save icon** to save the bounding boxes information as a json file.
 
 # Bugs and Fixes
 ## pypcd Package Issues
