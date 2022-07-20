@@ -1,6 +1,7 @@
 # 3D LiDAR Annotation Tool with pcd2bin Conversion Tool
 ## git clone from songanz/3D-LiDAR-annotator
 UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
+![](./img/UCSD_AVL_3D-LiDAR_Annotation_Tool.png)
 
 # Citation
 ``` 
@@ -60,7 +61,51 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
 # How to Annotate 3D-LiDAR Point Clouds or Objects
 0. 
 
+# Bugs and Fixes
+## pypcd Package Issues
+### Errors
+1. `ImportError: No module named 'cStringIO'`
+2. `TypeError: startswith first arg must be bytes or a tuple of bytes, not str`
+3. `ValueError: field '__0000' occurs more than once pypcd`
+4. `ImportError: cannot import name 'Markup' from 'jinja2'`
+5. `ImportError: cannot import name 'escape' from 'jinja2'`
 
+### Solutions
+1. To solve Error #1 and Error #2, execute the following commands in the terminal:
+    * `pip3 uninstall pypcd`
+    * `pip3 install --upgrade git+https://github.com/klintan/pypcd.git`
+2. To solve Error #3, edit the pypcd.py script from the pypcd python package, it can be in one of the following directories:
+    - `/home/user/anaconda3/envs/py37/lib/python3.7/site-packages/pypcd`
+    - `/usr/lib/python3.5/site-packages/pypcd`
+    
+    Original Code:
+
+    ```python
+    def parse_header(lines):
+        metadata = {}
+        for ln in lines:
+            if ln.startswith('#') or len(ln) < 2:
+                continue
+            match = re.match('(\w+)\s+([\w\s\.]+)', ln)
+    ```
+
+    Modified Code:
+
+    ```python
+    def parse_header(lines):
+        metadata = {}
+        for ln in lines:
+            if ln.startswith('#') or len(ln) < 2:
+                continue
+            ln = ln.replace('_','s',1)
+            ln = ln.replace('_','m',1)
+            match = re.match('(\w+)\s+([\w\s\.]+)', ln)
+    ```
+3. To solve Error #4 and Error #5, execute the following commands in the terminal:
+    * `pip3 uninstall Flask`
+    * `pip3 uninstall Jinja2`
+    * `pip3 install Flask==2.0.3`
+    * `pip3 install Jinja2==3.1.1`
 
 
 

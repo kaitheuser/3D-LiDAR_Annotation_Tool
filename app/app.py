@@ -48,7 +48,5 @@ if __name__ == "__main__":
 		print('Please enter an appropriate answer.')
 	if user_input in ['Y', 'y']:
 		pcd2bin_GUI()
-	else:
-		bin_directory_GUI()
 	tracker = Tracker()
 	app.run()
