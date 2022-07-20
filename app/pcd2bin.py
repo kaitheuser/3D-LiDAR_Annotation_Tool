@@ -83,7 +83,7 @@ def convert_pcd2bin():
         pc = pypcd.PointCloud.from_path(pcd_file)
 
         ## Generate bin file name
-        bin_file_name = "{}_{:05d}.bin".format(args.file_name, seq)
+        bin_file_name = "{}{:05d}.bin".format(args.file_name, seq)
         bin_file_path = os.path.join(args.bin_path, bin_file_name)
         
         ## Get data from pcd (x, y, z, intensity, ring, time)
