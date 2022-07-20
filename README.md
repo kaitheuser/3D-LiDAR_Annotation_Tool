@@ -100,10 +100,11 @@ UCSD Autonomous Vehicle Laboratory (AVL) 3D-LiDAR Annotation Tool
 7. Slide the **size** sliding bar (top right) to adjust the size of the point clouds.
 8. Click on the **Pen**/**Edit** button to change back to 2D view and controls.
 9. Edit the object IDs on the **Object IDs** list.
+10. Click on the object ID and push the **Delete** key to delete the object label.
 
 ![](./gif/output-json.gif)
 
-10. Click on the **Save icon** to save the bounding boxes information as a json file.
+11. Click on the **Save icon** to save the bounding boxes information as a json file.
 
 # 2D/3D Controls without Holding "Ctrl"
 0. **Left-click** to change the view of map.
